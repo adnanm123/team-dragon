@@ -1,7 +1,7 @@
 'use strict';
 
 
-let votingRounds = 5;
+let votingRounds = 25;
 let productIndexArray = [];
 
 let imgElements = document.querySelectorAll('img');
@@ -47,6 +47,8 @@ function handleImageClick(event) {
     if (votingRounds === 0) {
       imgContainer.removeEventListener('click', handleImageClick);
       state.saveToLocalStorage();
+
+      event.target.parentNode.classList.add('voting-rounds-zero')
     }
   }
 }

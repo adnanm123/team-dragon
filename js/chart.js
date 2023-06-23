@@ -34,8 +34,8 @@ function renderChart() {
           label: '# of TimesClicked',
           data: productTimesClicked,
           borderWidth: 1,
-          backgroundColor: 'orange',
-          borderColor: 'orange'
+          backgroundColor: 'darkblue',
+          borderColor: 'dark blue'
         },
         {
           label: '# of TimesShown',
